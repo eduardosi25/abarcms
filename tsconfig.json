@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "outDir": "./dist",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -17,7 +17,39 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "button": [
+        "dist/button"
+      ],
+      "button/*": [
+        "dist/button/*"
+      ],
+      "resources": [
+        "dist/resources"
+      ],
+      "resources/*": [
+        "dist/resources/*"
+      ],
+      "session": [
+        "dist/session"
+      ],
+      "session/*": [
+        "dist/session/*"
+      ],
+      "user": [
+        "dist/user"
+      ],
+      "user/*": [
+        "dist/user/*"
+      ],
+      "auth": [
+        "dist/auth"
+      ],
+      "auth/*": [
+        "dist/auth/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
